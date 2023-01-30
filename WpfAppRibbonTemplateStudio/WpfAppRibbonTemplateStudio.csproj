@@ -12,6 +12,7 @@
   <ItemGroup>
     <PackageReference Include="Fluent.Ribbon" Version="9.0.3" />
     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="6.0.0" />
@@ -43,4 +44,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="if not exist $(TargetDir)\Images mkdir $(TargetDir)\Images&#xD;&#xA;xcopy &quot;$(ProjectDir)\Images\*.*&quot; &quot;$(TargetDir)\Images\*.*&quot; /Y" />
+  </Target>
 </Project>

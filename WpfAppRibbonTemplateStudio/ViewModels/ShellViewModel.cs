@@ -33,6 +33,29 @@ public class ShellViewModel : BindableBase
         _navigationService.RequestNavigate(PageKeys.Main);
     }
 
+    // TODO: Icons should be added to the project as resources(Properties -> Build Action)
+
+    ICommand _menuItem1InvokedCommand;
+    public ICommand NavigateHomePageInvokedCommand => _menuItem1InvokedCommand ?? (_menuItem1InvokedCommand = new DelegateCommand(RequestNavigateHome));
+
+    private void RequestNavigateHome()
+    {
+        //if (_navigationService.CanNavigate(target))
+        //{
+            _navigationService.RequestNavigate(PageKeys.Main);
+        //}
+    }
+
+    ICommand _menuItem2InvokedCommand;
+    public ICommand NavigateMetroIconPacksPageInvokedCommand => _menuItem2InvokedCommand ?? (_menuItem2InvokedCommand = new DelegateCommand(RequestNavigateMetroIconPacks));
+
+    private void RequestNavigateMetroIconPacks()
+    {
+        //if (_navigationService.CanNavigate(target))
+        //{
+        _navigationService.RequestNavigate(PageKeys.MetroIconPacks);
+        //}
+    }
     private void OnUnloaded()
     {
         _regionManager.Regions.Remove(Regions.Main);

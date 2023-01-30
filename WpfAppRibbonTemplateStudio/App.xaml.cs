@@ -75,6 +75,7 @@ public partial class App : PrismApplication
         containerRegistry.RegisterForNavigation<ContentGridPage, ContentGridViewModel>(PageKeys.ContentGrid);
         containerRegistry.RegisterForNavigation<DataGridPage, DataGridViewModel>(PageKeys.DataGrid);
         containerRegistry.RegisterForNavigation<ListDetailsPage, ListDetailsViewModel>(PageKeys.ListDetails);
+        containerRegistry.RegisterForNavigation<MetroIconPacksPage, MetroIconPakcsViewModel>(PageKeys.MetroIconPacks);
         containerRegistry.RegisterForNavigation<MainPage, MainViewModel>(PageKeys.Main);
         containerRegistry.RegisterForNavigation<ShellWindow, ShellViewModel>();
 

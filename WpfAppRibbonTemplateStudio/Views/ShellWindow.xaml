@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+    xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
     xmlns:properties="clr-namespace:WpfAppRibbonTemplateStudio.Properties"
     xmlns:behaviors="clr-namespace:WpfAppRibbonTemplateStudio.Behaviors"
@@ -67,6 +68,16 @@
                         State="Large"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon1Header}">
+                        <Fluent:Button
+                            Size="Large"
+                            Icon="Images\Home.png"
+                            LargeIcon="Images\Home.png"
+                            Command="{Binding NavigateHomePageInvokedCommand}" />
+                        <Fluent:Button
+                            Size="Large"
+                            Icon="Images\Home.png"
+                            LargeIcon="Images\Image.png"
+                            Command="{Binding NavigateMetroIconPacksPageInvokedCommand}" />
                     </Fluent:RibbonGroupBox>
                     <Fluent:RibbonGroupBox
                         State="Middle"

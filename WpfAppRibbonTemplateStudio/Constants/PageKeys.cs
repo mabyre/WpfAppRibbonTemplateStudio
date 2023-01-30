@@ -3,6 +3,7 @@
 public class PageKeys
 {
     public const string Main = "Main";
+    public const string MetroIconPacks = "MetroIconPacks";
     public const string ListDetails = "ListDetails";
     public const string DataGrid = "DataGrid";
     public const string ContentGrid = "ContentGrid";
