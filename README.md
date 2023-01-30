@@ -10,9 +10,8 @@ I starded with :
 - [WpfAppRibbon](/WpfAppRibbonTemplateStudio)
 
 
-## Add a Ribbon Button
-
-To Navigate to a New Page 
+## First Step
+Add a Ribbon Button To Navigate to a New Page 
 
 <img style="margin: 10px" src="Images/2023-01-30_12h49_09.png" alt="TemplateVisualStudio Ribbon" />
 
