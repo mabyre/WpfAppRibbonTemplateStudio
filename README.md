@@ -19,3 +19,13 @@ Add a Ribbon Button To Navigate to a New Page
 To play with MahApps.Metro.IconPacks
 
 
+## Second Step
+
+Add a borner style to esealy transform Metro Icon Packs into Icon Image
+
+<img style="margin: 10px" src="Images/2023-01-31_12h52_34.png" alt="TemplateVisualStudio Ribbon transform Icon Image" />
+
+
+
+
+
