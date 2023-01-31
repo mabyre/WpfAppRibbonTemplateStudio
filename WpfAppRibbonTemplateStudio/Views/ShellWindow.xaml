@@ -75,9 +75,14 @@
                             Command="{Binding NavigateHomePageInvokedCommand}" />
                         <Fluent:Button
                             Size="Large"
-                            Icon="Images\Home.png"
-                            LargeIcon="Images\Image.png"
+                            Icon="Images\Archive.png"
+                            LargeIcon="Images\Archive.png"
                             Command="{Binding NavigateMetroIconPacksPageInvokedCommand}" />
+                        <Fluent:Button
+                            Size="Large"
+                            Icon="Images\Image.png"
+                            LargeIcon="Images\Image.png"
+                            Command="{Binding NavigateListDetailsPageInvokedCommand}" />
                     </Fluent:RibbonGroupBox>
                     <Fluent:RibbonGroupBox
                         State="Middle"

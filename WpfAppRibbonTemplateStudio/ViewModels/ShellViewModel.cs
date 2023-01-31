@@ -56,6 +56,15 @@ public class ShellViewModel : BindableBase
         _navigationService.RequestNavigate(PageKeys.MetroIconPacks);
         //}
     }
+
+    ICommand _menuItem3InvokedCommand;
+    public ICommand NavigateListDetailsPageInvokedCommand => _menuItem3InvokedCommand ?? (_menuItem3InvokedCommand = new DelegateCommand(RequestNavigateListDetails));
+
+    private void RequestNavigateListDetails()
+    {
+        _navigationService.RequestNavigate(PageKeys.ListDetails);
+    }
+
     private void OnUnloaded()
     {
         _regionManager.Regions.Remove(Regions.Main);
