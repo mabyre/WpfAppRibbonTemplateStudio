@@ -35,6 +35,15 @@ public class ShellViewModel : BindableBase
 
     // TODO: Icons should be added to the project as resources(Properties -> Build Action)
 
+    
+    ICommand _menuItem4InvokedCommand;
+    public ICommand NavigatePage1InvokedCommand => _menuItem4InvokedCommand ?? (_menuItem4InvokedCommand = new DelegateCommand(RequestNavigatePage1));
+
+    private void RequestNavigatePage1()
+    {
+        _navigationService.RequestNavigate(PageKeys.Page1);
+    }
+
     ICommand _menuItem1InvokedCommand;
     public ICommand NavigateHomePageInvokedCommand => _menuItem1InvokedCommand ?? (_menuItem1InvokedCommand = new DelegateCommand(RequestNavigateHome));
 

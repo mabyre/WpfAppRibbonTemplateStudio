@@ -17,6 +17,9 @@ I starded with :
 - [MahApps.Metro](https://github.com/MahApps/MahApps.Metro)
     > Styling the WPF application
 
+- [MahApps.Metro.IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks)
+    > Tons of icons
+
 - [Fluent.Ribbon](https://github.com/fluentribbon/Fluent.Ribbon)
     > Manage Menu Office like
 
