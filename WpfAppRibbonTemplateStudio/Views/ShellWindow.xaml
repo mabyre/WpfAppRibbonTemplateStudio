@@ -88,6 +88,14 @@
                         State="Middle"
                         MinWidth="150"
                         Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon2Header}">
+                        <Fluent:Button
+                            Header="Page1"
+                            Size="Small"
+                            Command="{Binding NavigatePage1InvokedCommand}">
+                            <Fluent:Button.Icon>
+                                <iconPacks:PackIconEntypo Margin="8" Kind="Pin"/>
+                            </Fluent:Button.Icon>
+                        </Fluent:Button>
                     </Fluent:RibbonGroupBox>
                 </Fluent:RibbonTabItem>
             </Fluent:Ribbon>
