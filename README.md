@@ -7,7 +7,18 @@ I starded with :
 - TemplateStudio Ribbon Prism
 
 ## Project in C#
-- [WpfAppRibbon](/WpfAppRibbonTemplateStudio)
+- [WPF App Ribbon TemplateStudio](/WpfAppRibbonTemplateStudio)
+
+## References
+
+- [TemplateStudio](https://github.com/microsoft/TemplateStudio)
+    > For all Microsoft Apps WinUI, WPF, UWP 
+ 
+- [MahApps.Metro](https://github.com/MahApps/MahApps.Metro)
+    > Styling the WPF application
+
+- [Fluent.Ribbon](https://github.com/fluentribbon/Fluent.Ribbon)
+    > Manage Menu Office like
 
 
 ## First Step
