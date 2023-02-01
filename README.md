@@ -10,6 +10,7 @@ I starded with :
 
 - [First Step](#first-step)
 - [Second Step](#second-step)
+- [Step 3](#step-3)
 
 ## Project in C#
 - [WPF App Ribbon TemplateStudio](/WpfAppRibbonTemplateStudio)
@@ -44,6 +45,13 @@ Add a borner style to esealy transform Metro Icon Packs into Icon Image
 
 <img style="margin: 10px" src="Images/2023-01-31_12h52_34.png" alt="TemplateVisualStudio Ribbon transform Icon Image" />
 
+## Step 3
+
+Validation Rules Studing
+
+Like a surgeon I transplanted validation rules from **[ExpenseItDemo](https://github.com/microsoft/WPF-Samples/tree/main/Sample%20Applications/ExpenseIt/ExpenseItDemo)**
+
+<img style="margin: 10px" src="Images/2023-02-01_16h55_57.png" alt="Validation Rules" />
 
 
 
