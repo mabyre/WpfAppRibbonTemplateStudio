@@ -33,17 +33,8 @@ public class ShellViewModel : BindableBase
         _navigationService.RequestNavigate(PageKeys.Main);
     }
 
-    // TODO: Icons should be added to the project as resources(Properties -> Build Action)
-
+    // Images Icons are added to the project as resources: Build Action -> xcopy files
     
-    ICommand _menuItem4InvokedCommand;
-    public ICommand NavigatePage1InvokedCommand => _menuItem4InvokedCommand ?? (_menuItem4InvokedCommand = new DelegateCommand(RequestNavigatePage1));
-
-    private void RequestNavigatePage1()
-    {
-        _navigationService.RequestNavigate(PageKeys.Page1);
-    }
-
     ICommand _menuItem1InvokedCommand;
     public ICommand NavigateHomePageInvokedCommand => _menuItem1InvokedCommand ?? (_menuItem1InvokedCommand = new DelegateCommand(RequestNavigateHome));
 
@@ -73,6 +64,31 @@ public class ShellViewModel : BindableBase
     {
         _navigationService.RequestNavigate(PageKeys.ListDetails);
     }
+
+    ICommand _menuItem4InvokedCommand;
+    public ICommand NavigatePage1InvokedCommand => _menuItem4InvokedCommand ?? (_menuItem4InvokedCommand = new DelegateCommand(RequestNavigatePage1));
+
+    private void RequestNavigatePage1()
+    {
+        _navigationService.RequestNavigate(PageKeys.Page1);
+    }
+
+    ICommand _menuItem5InvokedCommand;
+    public ICommand NavigateDataGridPageInvokedCommand => _menuItem5InvokedCommand ?? (_menuItem5InvokedCommand = new DelegateCommand(RequestNavigateDataGrid));
+
+    private void RequestNavigateDataGrid()
+    {
+        _navigationService.RequestNavigate(PageKeys.DataGrid);
+    }
+
+    ICommand _menuItem6_InvokedCommand;
+    public ICommand NavigateContentGridPageInvokedCommand => _menuItem6_InvokedCommand ?? (_menuItem6_InvokedCommand = new DelegateCommand(RequestNavigateContentGrid));
+
+    private void RequestNavigateContentGrid()
+    {
+        _navigationService.RequestNavigate(PageKeys.ContentGrid);
+    }
+    
 
     private void OnUnloaded()
     {

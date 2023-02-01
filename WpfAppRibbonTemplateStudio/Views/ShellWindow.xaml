@@ -70,9 +70,11 @@
                         Header="{x:Static properties:Resources.ShellPageRibbonHomeGroupCommon1Header}">
                         <Fluent:Button
                             Size="Large"
-                            Icon="Images\Home.png"
-                            LargeIcon="Images\Home.png"
-                            Command="{Binding NavigateHomePageInvokedCommand}" />
+                            Command="{Binding NavigateHomePageInvokedCommand}" >
+                            <Fluent:Button.Icon>
+                                <iconPacks:PackIconEntypo Margin="8" Kind="Home"/>
+                            </Fluent:Button.Icon>
+                        </Fluent:Button>
                         <Fluent:Button
                             Size="Large"
                             Icon="Images\Archive.png"
@@ -83,7 +85,22 @@
                             Icon="Images\Image.png"
                             LargeIcon="Images\Image.png"
                             Command="{Binding NavigateListDetailsPageInvokedCommand}" />
+                        <Fluent:Button
+                            Size="Large"
+                            Command="{Binding NavigateDataGridPageInvokedCommand}" >
+                            <Fluent:Button.Icon>
+                                <iconPacks:PackIconEntypo Kind="Database" Margin="8" />
+                            </Fluent:Button.Icon>
+                        </Fluent:Button>
+                        <Fluent:Button
+                            Size="Large"
+                            Command="{Binding NavigateContentGridPageInvokedCommand}" >
+                            <Fluent:Button.Icon>
+                                <iconPacks:PackIconEntypo Kind="TextDocument" Margin="8" />
+                            </Fluent:Button.Icon>
+                        </Fluent:Button>
                     </Fluent:RibbonGroupBox>
+                    
                     <Fluent:RibbonGroupBox
                         State="Middle"
                         MinWidth="150"
