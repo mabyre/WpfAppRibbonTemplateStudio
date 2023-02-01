@@ -8,6 +8,11 @@
 
     <Application.Resources>
         <ResourceDictionary>
+            <Page1ViewModel x:Key="Page1Data"
+                xmlns="clr-namespace:WpfAppRibbonTemplateStudio.ViewModels"
+                Alias="Someone@example.com"
+                EmployeeNumber="57304">
+            </Page1ViewModel>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Styles/_FontSizes.xaml" />
                 <ResourceDictionary Source="/Styles/_Thickness.xaml" />

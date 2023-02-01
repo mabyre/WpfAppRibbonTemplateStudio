@@ -53,6 +53,18 @@ Like a surgeon I transplanted validation rules from **[ExpenseItDemo](https://gi
 
 <img style="margin: 10px" src="Images/2023-02-01_16h55_57.png" alt="Validation Rules" />
 
+Now I'm looking for why the beavior is not the same. What's wrong ? First TextBox is not feed with default text.
+
+<img style="margin: 10px" src="Images/2023-02-01_18h28_50.png" alt="Validation Rules + Default Text" />
+
+See Commit :
+
+Default Text for TextBox in DataContext (use of SetProperty Prism.MvvM.BindableBase
+
+
+
+
+
 
 
 
